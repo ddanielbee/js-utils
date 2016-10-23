@@ -19,11 +19,21 @@ export function arrayContains(srcArray, testArray) {
 }
 
 /**
- * Simple wrapper across the oneliner that maps an object's property values to an array. 
+ * Simple wrapper for the oneliner that maps an object's property values to an array (kinda like a poor man's Object.values)
  * @author Daniel Bolívar <daniel.bolivar@icloud.com>
  * @param  {Object} object Object to be mapped
  * @return {Array}        Array consisting of the object's property values.
  */
-export function mapToArray(object) {
+export function mapValuesToArray(object) {
 	return Object.keys(object).map(key => object[key]);
+}
+
+/**
+ * Wrapper around the oneliner that maps an object's key value pairs to an array with key value pairs as elements. (Poor man's Object.entries)
+ * @author Daniel Bolívar <daniel.bolivar@icloud.com>
+ * @param  {Object} object Object to be mapped
+ * @return {Array}        Array consisting of the object's key value pairs. 
+ */
+export function mapPairsToArray(object) {
+	return Object.keys(object).map(key => [key, object[key]]);
 }

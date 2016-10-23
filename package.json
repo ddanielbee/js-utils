@@ -1,0 +1,14 @@
+{
+  "name": "jsutils",
+  "version": "0.0.1",
+  "description": "Lightweight Javascript Utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Daniel Bolivar",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^16.0.2"
+  }
+}

@@ -6,7 +6,7 @@
  * @author Daniel Bolívar <daniel.bolivar@icloud.com>
  * @param  {Array} srcArray  Array to be tested. 
  * @param  {Array} testArray Array to be tested against. 
- * @return {boolean}           Wethere there were any matches.
+ * @return {boolean}           Wether there were any matches.
  */
 export function arrayContains(srcArray, testArray) {
 	let result = false;

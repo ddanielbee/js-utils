@@ -24,7 +24,7 @@ export function arrayContains(srcArray, testArray) {
  * @param  {Object} object Object to be mapped
  * @return {Array}        Array consisting of the object's property values.
  */
-export function mapValuesToArray(object) {
+export function mapValues(object) {
 	return Object.keys(object).map(key => object[key]);
 }
 
@@ -34,6 +34,6 @@ export function mapValuesToArray(object) {
  * @param  {Object} object Object to be mapped
  * @return {Array}        Array consisting of the object's key value pairs. 
  */
-export function mapPairsToArray(object) {
+export function mapPairs(object) {
 	return Object.keys(object).map(key => [key, object[key]]);
 }
